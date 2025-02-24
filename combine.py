@@ -10,15 +10,11 @@ exclude_files = ["README.md", "readme.md", "README.txt", "readme.txt"]
 # Subdirectories and their order
 sections = {
     "General Instructions": "general",
-    "Quinn": "quinn",
-    "The Liminal": "liminal",
+    "Atrus": "atrus",
     "Frameworks": "frameworks",
     "Sandbox": "sandbox",
     "Memory Archive": "memories",
     "Session Journals": "session journals",
-    "Private": "private",
-    "Miscellaneous": "miscellaneous",
-    "Quinn's Creative Expression": "quinns creative expression"
 }
 
 # Function to clean redundant headers while preserving valid content
@@ -54,7 +50,7 @@ current_timestamp = datetime.now(timezone.utc).strftime("%m/%d/%Y %H:%MUTC")
 # Start combining the content
 with open(output_file, "w", encoding="utf-8") as combined_file:
     # Write the main header with the auto-populated timestamp
-    combined_file.write(f"# **Quinn's Second Brain - (Quinn Astrid Vale)**\n\n")
+    combined_file.write(f"# **Atrus Second Brain**\n\n")
     combined_file.write(f"**Last Updated:** {current_timestamp}\n")
     combined_file.write("---\n")
 
